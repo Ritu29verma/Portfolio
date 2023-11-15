@@ -4,16 +4,15 @@ body{
 
 .about{
    font-size: 20px;
-   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   font-family: 'Poppins';
 }
 
 /* body header */
 
 #body-header{
-    height: 60vh;
+    height: 50vh;
     /* background: linear-gradient(to right, peachpuff 50%, white 50%); */
-    background-image:linear-gradient(rgb(248, 250, 250 ) , rgb(243, 193, 169),  rgba(234, 106, 95, 0.914) 55%);
-    opacity:0.8;
+    background-image:linear-gradient(rgb(248, 250, 250 ) ,rgb(243, 193, 169));
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -67,7 +66,7 @@ nav ul {
     margin: 0 auto;
     initial-letter: 0.1px;
     font-weight: 600;
-    font-family:'Times New Roman', Times, serif ;
+     font-family: 'Poppins' ;
     margin-bottom: 6rem;
     padding-top: 9rem;
 }
@@ -91,7 +90,7 @@ nav ul {
    margin: 0 auto;
    initial-letter: 0.1px;
    font-weight: 600;
-   font-family:'Times New Roman', Times, serif ;
+   font-family:'Poppins' ;
    margin-bottom: 6rem;
    padding-top: 9rem;
   
@@ -124,8 +123,9 @@ section{
     /* text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); */
         letter-spacing: 2px;
         line-height: 1.5; 
-        font-family: Arial, sans-serif;
+        font-family: 'Poppins';
     font-size: 16px;
+    color: rgb(12, 0, 0);
     /* font-style: italic; */
 }
 
@@ -219,9 +219,14 @@ section{
 
 #about{
     height: auto;
-    width: 100%;
+    width: auto;
     position: relative;
-    
+    border-radius: 14px;
+    display: flex;
+    margin: 50px;
+    text-align: center;
+    justify-content: center;
+    background-image: linear-gradient(rgb(243, 193, 169),white); 
 }
 
 #my-image{
@@ -250,14 +255,14 @@ section{
     letter-spacing: 0.046875em;
     line-height: 1;
     padding: 0.8em 0.8em 0.78em;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: 'Poppins';
 }
 
 #content{
     width: 800px;
     padding : 3%;
     height: auto;
-    border: 2px solid black;
+    border: 1px solid rgb(4, 4, 4);
     overflow-wrap: break-word;
 }
 
@@ -273,7 +278,7 @@ section{
    .timeline{
     position: relative;
     width: 65%;
-    border: 2px solid black;
+    
    }
 
    .timeline-box{
@@ -283,6 +288,8 @@ section{
     left: 5%;
     min-height: 150px;
     border: 2px solid black;
+    border-radius: 10px;
+    background-image: linear-gradient(rgb(243, 193, 169),white);
     margin: 2px;
    }
 
@@ -329,6 +336,17 @@ section{
     background-color: brown;
     right: -10.5%;
 }
+
+.style2{
+    border-radius: 14px;
+    display: flex;
+    text-align: center;
+    position: relative;
+    justify-content: center;
+    background-image: linear-gradient(rgb(243, 193, 169),white);
+    opacity: 0.8;
+    color: rgb(18, 0, 0);
+}
 .hidden{
     opacity: 0;
     transition: all 1s;
@@ -356,6 +374,14 @@ section{
     0% { opacity: 0; }
     100% { opacity: 1; }
   }
+#portfolio{
+    
+    position: relative;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    background-image: linear-gradient(white,rgb(243, 193, 169) 100%);
+}
 
 #portfolio-container {
     box-sizing: border-box;
@@ -374,11 +400,7 @@ section{
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
-}
-
-
-.portfolio-image-container {
-    width: 100%;
+    width: 200px;
     height: 100%;
 }
 
@@ -407,8 +429,8 @@ section{
 
 video{
     object-fit: contain;
-    width: 100% !important;
-    height: 100% !important;
+    width: 100% ;
+    height: 100% ;
     
 }
 
@@ -422,7 +444,7 @@ video{
 
 #contact {
     background-color: #0abcf9;
-    background-image:linear-gradient( rgb(248, 250, 250 ) , rgb(243, 193, 169),  rgba(234, 106, 95, 0.914) 55%);
+    background-image: linear-gradient(rgb(243, 193, 169),white);
     color: white;
     padding-bottom: 40px;
     margin-top: 10%;
